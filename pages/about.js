@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import fetch from "isomorphic-unfetch";
-// import Error from "./_error";
+import Error from "./_error";
 import { Component } from "react";
 
 export default class About extends Component {
@@ -15,9 +15,9 @@ export default class About extends Component {
   render() {
     const { user, statusCode } = this.props;
 
-    // if (statusCode) {
-    //   return <Error statusCode={statusCode} />;
-    // }
+    if (statusCode) {
+      return <Error statusCode={statusCode} />;
+    }
 
     return (
       <Layout title="About">
