@@ -1,5 +1,15 @@
+import Link from "next/link"
+
 // OUT OF THE BOX: HOT RELOADING
 
-const Index = () => <div>Welcome to the home page</div>
+const Index = () => (
+  <div>
+    <h1>Home</h1>
+    <Link href="/about">
+      <a>Go to About</a>
+    </Link>
+    <p>Welcome to the home page</p>
+  </div>
+)
 
 export default Index
